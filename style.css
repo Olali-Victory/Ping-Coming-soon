@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+
+:root{
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+    --font-family: 'Libre Franklin', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    left: 50%;
+    margin-top: 50px;
+    margin-bottom:50px
+}
+
+.header{
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--gray);
+    margin-bottom: 20px
+}
+
+.bold-text{
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: black
+}
+
+.subscribe{
+    font-size: 10px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    color: black;
+    margin-bottom: 20px
+}
+
+.input{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.email{
+    border: 2px solid var(--pale-blue);
+    height: 30px;
+    width: 400px;
+    padding: 10px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    color: black;
+    border-radius: 100px;
+    margin-right: 25px
+}
+
+.email:invalid{
+    border: 2px solid var(--light-red)
+    
+}
+
+
+
+#err-message{
+    display: none;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--light-red);
+    position: absolute;
+    top: 290px;
+    left: 27.5%
+}
+
+
+.button{
+    cursor: pointer;
+    border: 2px solid var(--blue);
+    background-color: var(--blue);
+    font-family: var(--font-family);
+    text-align: center;
+    height: 30px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 100px;
+    color: white;
+    box-shadow: 3px 3px 10px 2px var(--pale-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.illustration{
+    width: 75%;
+    margin-bottom: 50px
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-logo{
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--blue);
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.rights{
+    font-family: var(--font-family);
+    margin-bottom: 20px
+}
+
+.attribution{
+    font-family: var(--font-family);
+    font-size: 15px
+}
