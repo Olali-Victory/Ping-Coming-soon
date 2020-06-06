@@ -126,13 +126,56 @@ body{
     justify-content: center;
 }
 
-.social-logo{
-    height: 50px;
-    width: 50px;
+
+.icon {
     border: 2px solid var(--blue);
     border-radius: 100%;
-    margin: 20px;
+    width: 3em;
+    height: 3em;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.icon:hover{
+    background-color: var(--blue);
+    fill: white;
 }
+
+
+svg{
+    fill: var(--blue);
+    position: relative;
+}
+
+svg:hover{
+    fill: white;
+}
+
+.facebook{
+    background-image: url("./SVG/facebook.svg");
+}
+
+.facebook:hover{
+    background-image: url(./SVG/facebook2.svg);
+}
+
+.twitter{
+    background-image: url(./SVG/twitter.svg);
+}
+
+.twitter:hover{
+    background-image: url(./SVG/twitter2.svg);
+}
+
+.instagram{
+    background-image: url(./SVG/instagram.svg);
+}
+
+.instagram:hover{
+    background-image: url(./SVG/instagram2.svg);
+}
+
 
 .rights{
     font-family: var(--font-family);
